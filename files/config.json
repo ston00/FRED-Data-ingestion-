@@ -1,0 +1,45 @@
+{
+  "series": {
+    "GDP": {
+      "name": "Gross Domestic Product",
+      "category": "macroeconomic",
+      "units": "lin",
+      "added_date": "2024-01-01T00:00:00"
+    },
+    "UNRATE": {
+      "name": "Unemployment Rate",
+      "category": "labor",
+      "units": "lin",
+      "added_date": "2024-01-01T00:00:00"
+    },
+    "CPIAUCSL": {
+      "name": "Consumer Price Index",
+      "category": "prices",
+      "units": "lin",
+      "added_date": "2024-01-01T00:00:00"
+    },
+    "FEDFUNDS": {
+      "name": "Federal Funds Rate",
+      "category": "interest_rates",
+      "units": "lin",
+      "added_date": "2024-01-01T00:00:00"
+    },
+    "HOUST": {
+      "name": "Housing Starts",
+      "category": "real_estate",
+      "units": "lin",
+      "added_date": "2024-01-01T00:00:00"
+    },
+    "ICSA": {
+      "name": "Initial Claims",
+      "category": "labor",
+      "units": "lin",
+      "added_date": "2024-01-01T00:00:00"
+    }
+  },
+  "pipeline": {
+    "update_frequency": "weekly",
+    "last_update": "2024-01-01T00:00:00",
+    "data_format": "parquet"
+  }
+}
