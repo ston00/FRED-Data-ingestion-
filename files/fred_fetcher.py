@@ -9,6 +9,9 @@ import requests
 from datetime import datetime
 from typing import List, Dict, Optional
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class FREDFetcher:
@@ -21,7 +24,7 @@ class FREDFetcher:
         Args:
             api_key: FRED API key. If None, will look for FRED_API_KEY env var
         """
-        self.api_key = api_key or os.getenv('API Key')
+        self.api_key = api_key or os.getenv('FRED_API_KEY')
         if not self.api_key:
             raise ValueError(
                 "FRED API key not provided. Set FRED_API_KEY environment variable "
